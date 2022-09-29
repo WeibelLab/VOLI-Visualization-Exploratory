@@ -1,0 +1,42 @@
+{
+  "type": "APL",
+  "version": "2022.1",
+  "description": "A hello world APL document.",
+  "theme": "dark",
+  "import": [
+    {
+      "name": "alexa-layouts",
+      "version": "1.5.0"
+    }
+  ],
+  "resources": [],
+  "styles": {},
+  "layouts": {},
+  "mainTemplate": {
+    "parameters": [
+      "backgroundImageExampleData"
+    ],
+    "items": [
+      {
+        "type": "Container",
+        "width": "100%",
+        "height": "100%",
+        "items": [
+          {
+            "type": "AlexaBackground",
+            "backgroundImageSource": "https://assets22systemdemo.s3.us-west-2.amazonaws.com/sleepquality.jpg"
+          },
+          {
+            "type": "AlexaHeader",
+            "headerBackButton": true,
+            "headerBackButtonAccessibilityLabel": "back",
+            "headerBackgroundColor": "transparent",
+            "headerTitle": "",
+            "headerSubtitle": "",
+            "headerDivider": false
+          }
+        ]
+      }
+    ]
+  }
+}
