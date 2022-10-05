@@ -1,0 +1,109 @@
+{% extends "_layout.html" %}
+{% block content %}
+
+{#<iframe src="https://google.com"#}
+{#        width="100%" height="500" frameborder="0">#}
+{#  <p>#}
+{#    <a href="https://google.com">#}
+{#       Fallback link for browsers that don't support iframes#}
+{#    </a>#}
+{#  </p>#}
+{#</iframe>#}
+
+
+
+  <div class="row flex">
+
+    <div class="col s6">
+      <div class="card">
+
+        <div class="card-content">
+            <span class="card-title">Time Remains: <span id="time-sec">0</span>seconds</span>
+
+                <!-- some hidden meta data -->
+                <input type="hidden" id="deviceId" value="">
+                <input type="hidden" id="requestId" value="">
+                <input type="hidden" id="sessionId" value="">
+
+                <!-- received text -->
+                <div class="input-field">
+                  <input disabled id="query" type="text">
+                  <label for="query">Query</label>
+                </div>
+
+                <!-- responsed speech -->
+                <div class="input-field">
+                  <input id="speech" type="text">
+                  <label for="speech">Speech</label>
+                </div>
+
+                <!-- card title -->
+                <div class="input-field">
+                  <input id="card-title" type="text">
+                  <label for="card-title">Card Title</label>
+                </div>
+
+                <!-- card title -->
+                <div class="input-field">
+                    <textarea id="card-content" class="materialize-textarea"></textarea>
+                    <label for="card-content">Card Content</label>
+                </div>
+
+        </div>
+
+        <div class="card-action">
+          	<a href="#" onclick="button_submit_response();return false;", id="response_submit">Submit</a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="col s6">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Recommended Response</span>
+			<form action="#">
+				<p>
+				  <label>
+					<input name="group1" type="radio"/>
+					<span>Red</span>
+				  </label>
+				</p>
+				<p>
+				  <label>
+					<input name="group1" type="radio"/>
+					<span>Yellow</span>
+				  </label>
+				</p>
+			</form>
+
+
+        </div>
+        <div class="card-action">
+          <a href="#">OK</a>
+          <a href="#", id="search-more" target="_blank">Search More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<div class="row">
+    <div class="responsive-embed">
+        <iframe id="google-search"
+                src="https://www.google.com/search?igu=1&ei=&q=san+diego"
+                width="560"
+                height="400"
+                frameborder="0"
+                scrolling="auto"
+                style="width: 100%;">
+            Nothing to show
+        </iframe>
+    </div>
+</div>
+
+
+
+{% endblock %}
