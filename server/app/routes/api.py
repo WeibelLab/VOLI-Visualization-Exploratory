@@ -472,9 +472,25 @@ def api_v2_get_next_message():
 
     return jsonify(_ret)
 
+
 '''
 return value should use the APL format
 '''
+
+
+# curl -v 127.0.0.1:443/return-file-small.png
+@routes.route('/return-file-small.png')
+def return_file_small():
+    print('return file small')
+    return send_file('../../figures/sleepquality.jpg', attachment_filename='sleepquality.jpg')
+
+
+# curl -v 127.0.0.1:443/return-file-large.png
+@routes.route('/return-file-large.png')
+def return_file_large():
+    print('return file large')
+    return send_file('../../figures/sleepquality.jpg', attachment_filename='sleepquality.jpg')
+
 
 @routes.route('/api/start_session', methods=["POST"])
 def start_session():
@@ -499,6 +515,7 @@ def start_session():
     return jsonify({
         "ok": True
     }), 200
+
 
 @routes.route('/api/end_session', methods=["POST"])
 def end_session():
@@ -530,53 +547,6 @@ def get_state():
         "state": state.get_sessions(),
         "devices": state.get_devices()
     }), 200
-
-
-    # PART 1 Flask: Make API generating image
-    # def foo(): 1.load file, 2.deliver to client
-# Test Code
-# can run, but just run a little bit
-# @routes.route('/get_image/<filename>',  methods=["GET"])
-# def get_image(filename):
-#     """ This endpoint just returns the image
-#     The key is the filename with extension
-#     """
-#     filepath = "static/img/" + filename # '/home/ubuntu/backend-healthdata-Yichen/app/static/img/...'
-#     print(filepath)
-#     return send_from_directory(filepath)
-# ROUND TWO, fail
-# from flask import send_from_directory
-# import os
-# root = os.path.join(os.path.dirname(os.path.abspath(__file__)))
-# @routes.route('/get_image/<path:path>', methods=['GET'])
-# def get_image(path):
-#     print(root, path)
-#     return send_from_directory(root, path)
-
-# 3 https://stackoverflow.com/questions/8637153/how-to-return-images-in-flask-response
-# @routes.route("/test", methods=['GET'])
-# def test():
-#     print("test")
-#     return send_file(
-#             'static/img/voli-logo-small.png',
-#             as_attachment=True,
-#             attachment_filename='voli-logo-small.png',
-#             mimetype='image/png'
-#         )
-
-# 4 
-# curl -v 127.0.0.1:443/return-file-small.png
-@routes.route('/return-file-small.png')
-def return_file_small():
-    print('return file small')
-    return send_file('/home/ubuntu/backend-healthdata-Yichen/app/static/img/voli-logo-small.png', attachment_filename='voli-logo-small.png')
-    # return send_file('/home/ubuntu/backend-healthdata-Yichen/figures/placeholder.jpg', attachment_filename='placeholder.jpg')
-
-# curl -v 127.0.0.1:443/return-file-large.png
-@routes.route('/return-file-large.png')
-def return_file_large():
-    print('return file large')
-    return send_file('/home/ubuntu/backend-healthdata-Yichen/app/static/img/voli-logo-large.png', attachment_filename='voli-logo-large.png')
 
 
 @routes.app_errorhandler(404)
