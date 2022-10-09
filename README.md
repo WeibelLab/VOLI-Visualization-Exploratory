@@ -29,6 +29,8 @@ You may deploy the system in a simplified way with only Alexa Skill and AWS Lamb
 + ```AWS CLI``` is configured with credentials.
 
 ## Simple Deployment
+With Amazon Alexa and AWS Lambda, you can test the system by showing static figures on the Echo Show.
+
 ### 1. Deploy Alexa Skill:
 
 ### 2. Deploy AWS Lambda:
@@ -43,6 +45,10 @@ $ aws lambda update-function-code --function-name voli-visualization-exploratory
 By this time, you are able to see a Function in AWS Lambda named ```voli-visualization-exploratory```. Open it, click ```Add trigger```, select ```Alexa```, and enter the ```Skill ID``` in Part 1.
 
 ## Server Deployment
+With the Falsk server delopyed on AWS EC2, you are able to display real-time figures on the Echo Show generated from the server.
+
+After deploying the server on EC2, just run it by ```$ python3 start.py```. 
+<!-- Then you can change the URL of ```backgroundImageSource``` in ```/lambda/documents/visualization_background_document.json``` to the URL returning images in ```server/app/api.py```.  -->
 
 ## Citation
 ```
@@ -59,5 +65,3 @@ location = {Athens, Greece},
 series = {ASSETS '22}
 }
 ```
-
-## Further Resources
