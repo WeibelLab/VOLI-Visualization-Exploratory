@@ -25,7 +25,6 @@ We prototyped the system based on Amazon Alexa and Amazon Web Services (AWS). It
 You may deploy the system in a simplified way with only Alexa Skill and AWS Lambda, or make a full deployment with AWS EC2 server as well.
 
 ## Prerequisites
-+ ```Alexa Skills Kit CLI``` is installed.
 + An Amazon developer account and its ```IAM user name``` and ```access key``` ([Reference](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html)).
 + ```AWS CLI``` is configured with credentials.
 
@@ -33,6 +32,7 @@ You may deploy the system in a simplified way with only Alexa Skill and AWS Lamb
 With Amazon Alexa and AWS Lambda, you can test the system by showing static figures on the Echo Show.
 
 ### 1. Deploy Alexa Skill:
+Go to [Alexa Console](https://developer.amazon.com/alexa/console/ask) and create a with a self-hosted backend. Record its ```Skill ID```.
 
 ### 2. Deploy AWS Lambda:
 Enter the ```lambda``` folder, then run these commands (replace contents in <> with your owns'):
