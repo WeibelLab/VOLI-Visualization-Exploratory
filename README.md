@@ -1,5 +1,14 @@
-# VOLI Visualization Exploratory
-This is the system demo of ASSETS'22 Poster “Towards Visualization of Time–Series Ecological Momentary Assessment (EMA) Data on Standalone Voice–First Virtual Assistants”. 
+# Towards Visualization of Time-Series Ecological Momentary Assessment (EMA) Data on Standalone Voice-First Virtual Assistants
+Yichen Han, Christopher Bo Han, Chen Chen, Peng Wei Lee, Michael Hogarth, Alison A. Moore, Nadir Weibel, Emilia Farcas
+
+![A user's past sleep quality presented on an Amazon Echo Show](documentation/sleepquality.jpg)
+
+This work is a part of [VOLI Project](http://voli.ucsd.edu/) at UC San Diego [Human-Centered Extented Intelligence Lab](https://hxi.ucsd.edu/). You may read the full [Paper]() and watch the [Video Presentation](https://drive.google.com/file/d/1VW-CC7GzLiob--P1NYOe89nwbE7B3i1s/view?usp=sharing).
+
+
+## Motivation
+
+## System Design
 
 ## Quick Start
 You may deploy the system in a simplified way with only Alexa Skill and AWS Lambda, or make a full deployment with AWS EC2 server as well.
@@ -25,6 +34,19 @@ By this time, you are able to see a Function in AWS Lambda named ```voli-visuali
 ## Server Deployment
 
 ## Citation
+```
+@inproceedings{han2022towards,
+author = {Han, Yichen and Han, Christopher Bo and Chen, Chen and Lee, Peng Wei and Hogarth, Michael and Moore, Alison A. and Weibel, Nadir and Farcas, Emilia},
+title = {Towards Visualization of Time-Series Ecological Momentary Assessment (EMA) Data on Standalone Voice-First Virtual Assistants},
+year = (2022),
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = (https://doi.org/10.1145/3517428.3550398)
+doi = {10.1145/3517428.3550398},
+keywords = {Gerontechnology, Accessibility, Health – Well-being, User Experience Design, Older Adults, Voice User Interfaces, EMA},
+location = {Athens, Greece},
+series = {ASSETS '22}
+}
+```
 
 ## Further Resources
-This work is a part of [VOLI Project]() and UC San Diego [Human-Extented Lab](). 
