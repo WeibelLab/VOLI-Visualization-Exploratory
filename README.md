@@ -1,7 +1,7 @@
 # Towards Visualization of Time-Series Ecological Momentary Assessment (EMA) Data on Standalone Voice-First Virtual Assistants
 Yichen Han, Christopher Bo Han, Chen Chen, Peng Wei Lee, Michael Hogarth, Alison A. Moore, Nadir Weibel, Emilia Farcas
 
-![A user's past sleep quality presented on an Amazon Echo Show](documentation/sleepquality.jpg)
+![A user's past sleep quality presented on an Amazon Echo Show](documentation/Demo.gif)
 
 This work is a part of [VOLI Project](http://voli.ucsd.edu/) at UC San Diego [Human-Centered Extented Intelligence Lab](https://hxi.ucsd.edu/). You may read the full [Paper]() and watch the [Video Presentation](https://drive.google.com/file/d/1VW-CC7GzLiob--P1NYOe89nwbE7B3i1s/view?usp=sharing).
 
@@ -33,6 +33,8 @@ With Amazon Alexa and AWS Lambda, you can test the system by showing static figu
 
 ### 1. Deploy Alexa Skill:
 Go to [Alexa Console](https://developer.amazon.com/alexa/console/ask) and create a with a self-hosted backend. Record its ```Skill ID```.
+
+Connect its ```Endpoint``` to the Lambda Function in the next part by entering its ```Function ARN```.
 
 ### 2. Deploy AWS Lambda:
 Enter the ```lambda``` folder, then run these commands (replace contents in <> with your owns'):
