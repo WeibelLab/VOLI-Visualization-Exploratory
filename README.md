@@ -25,6 +25,7 @@ We prototyped the system based on Amazon Alexa and Amazon Web Services (AWS). It
 You may deploy the system in a simplified way with only Alexa Skill and AWS Lambda, or make a full deployment with AWS EC2 server as well.
 
 ## Prerequisites
++ ```Alexa Skills Kit CLI``` is installed.
 + An Amazon developer account and its ```IAM user name``` and ```access key``` ([Reference](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html)).
 + ```AWS CLI``` is configured with credentials.
 
