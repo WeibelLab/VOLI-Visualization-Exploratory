@@ -1,6 +1,7 @@
 # VOLI Visualization Exploratory
 This is the system demo of ASSETS'22 Poster “Towards Visualization of Time–Series Ecological Momentary Assessment (EMA) Data on Standalone Voice–First Virtual Assistants”. 
 
+## Quick Start
 You may deploy the system in a simplified way with only Alexa Skill and AWS Lambda, or make a full deployment with AWS EC2 server as well.
 
 ## Prerequisites
@@ -22,3 +23,8 @@ $ aws lambda update-function-code --function-name voli-visualization-exploratory
 By this time, you are able to see a Function in AWS Lambda named ```voli-visualization-exploratory```. Open it, click ```Add trigger```, select ```Alexa```, and enter the ```Skill ID``` in Part 1.
 
 ## Server Deployment
+
+## Citation
+
+## Further Resources
+This work is a part of [VOLI Project]() and UC San Diego [Human-Extented Lab](). 
