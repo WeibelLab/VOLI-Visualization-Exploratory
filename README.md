@@ -6,9 +6,20 @@ Yichen Han, Christopher Bo Han, Chen Chen, Peng Wei Lee, Michael Hogarth, Alison
 This work is a part of [VOLI Project](http://voli.ucsd.edu/) at UC San Diego [Human-Centered Extented Intelligence Lab](https://hxi.ucsd.edu/). You may read the full [Paper]() and watch the [Video Presentation](https://drive.google.com/file/d/1VW-CC7GzLiob--P1NYOe89nwbE7B3i1s/view?usp=sharing).
 
 
-## Motivation
+## Introduction
+Accessing and interacting with digital health information is a key challange for aging populations. Ecological Momentary Assessments (EMA) coupled with voice-based Intelligent Virtual Assistants (IVAs) can be effective to improve older adults Quality of Life.
+
+To explore the potential opportunities for visualizing time-series based EMA data on standalone IVAs, we prototyped this preliminary system. Via this system, oler users are able to query and examine their time-series EMA data on Amazon Echo Show.
+
+![With touchscreen based standalone voice–first IVAs, older adults are able to query and visualize the time–series based EMA data (e.g., the quality and time of the sleep).](documentation/Sample_Workflow.jpg)
+
+By observing and interacting with the IVA visualization, and especially older adults’ past data and corresponding trends, older users might be able
+to make in-situ decisions to address possible unhealthy lifestyle. This artifact will also help future system development with more categories of real-time data and studies on the effectiveness of their visualizations.
 
 ## System Design
+We prototyped the system based on Amazon Alexa and Amazon Web Services (AWS). It consists of three parts: (1) an Amazon Alexa frontend converting users’ utterances to queries, (2) an AWS Lambda middle-tier that handles the queries and requests the graphs, and (3) a AWS EC2 server to generate the graphs.
+
+![When older adults request a graph from voice assistant Alexa. AWS Lambda handles this request by asking EC2 to generate a graph and send it back to Echo show, paired with Alexa.](documentation/System_Design.jpg)
 
 ## Quick Start
 You may deploy the system in a simplified way with only Alexa Skill and AWS Lambda, or make a full deployment with AWS EC2 server as well.
