@@ -3,7 +3,7 @@ Yichen Han, Christopher Bo Han, Chen Chen, Peng Wei Lee, Michael Hogarth, Alison
 
 ![A user's past sleep quality presented on an Amazon Echo Show](documentation/Demo.gif)
 
-This work is a part of [VOLI Project](http://voli.ucsd.edu/) at UC San Diego [Human-Centered Extented Intelligence Lab](https://hxi.ucsd.edu/). You may read the full [Paper]() and watch the [Video Presentation](https://drive.google.com/file/d/1VW-CC7GzLiob--P1NYOe89nwbE7B3i1s/view?usp=sharing).
+This work is a part of [VOLI Project](http://voli.ucsd.edu/) at UC San Diego [Human-Centered Extented Intelligence Lab](https://hxi.ucsd.edu/). You may read the full [Paper]() and watch the [Video Presentation](https://www.youtube.com/watch?v=MPd0Dlc1IPs).
 
 
 ## Introduction
